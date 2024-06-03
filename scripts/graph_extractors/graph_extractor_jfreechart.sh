@@ -1,0 +1,5 @@
+mainClass="com.kuleuven.graph_extractor.GraphExtractor"
+graphPath="thesis_code/data/jfreechart/graph/graph.json"
+srcDir="systems/jfreechart/src/main/java/"
+jarPath="target/libs/jfreechart-1.5.4.jar"
+mvn exec:java -Dexec.mainClass=$mainClass -Dexec.args="$graphPath $srcDir $jarPath"

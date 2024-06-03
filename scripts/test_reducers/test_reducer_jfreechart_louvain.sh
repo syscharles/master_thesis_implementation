@@ -1,0 +1,7 @@
+mainClass="com.kuleuven.test_reducer.TestReducer"
+clustersPath="thesis_code/data/jfreechart/clusters/louvain/clusters.json"
+testInput="systems/jfreechart/src/test"
+testOutput="systems/jfreechart/src/reduced_test_louvain"
+jarPath="target/libs/jfreechart-1.5.4.jar"
+srcDir="systems/jfreechart/src"
+mvn exec:java -Dexec.mainClass=$mainClass -Dexec.args="$clustersPath $testInput $testOutput $jarPath $srcDir"

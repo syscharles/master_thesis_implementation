@@ -1,0 +1,7 @@
+mainClass="com.kuleuven.missing_test_finder.MissingTestFinder"
+clustersPath="thesis_code/data/commons_math/clusters/leiden/clusters.json"
+testInput="systems/commons-math/src/test"
+jarPath="target/libs/commons-math3-3.6.1.jar"
+srcDir="systems/commons-math/src"
+missingTests="thesis_code/data/commons_math/missing_tests/leiden/missing_tests.json"
+mvn exec:java -Dexec.mainClass=$mainClass -Dexec.args="$clustersPath $testInput $jarPath $srcDir $missingTests"

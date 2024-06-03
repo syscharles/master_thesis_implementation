@@ -1,0 +1,5 @@
+mainClass="com.kuleuven.graph_extractor.GraphExtractor"
+graphPath="thesis_code/data/commons_math/graph/graph.json"
+srcDir="systems/commons-math/src/main/java/"
+jarPath="target/libs/commons-math3-3.6.1.jar"
+mvn exec:java -Dexec.mainClass=$mainClass -Dexec.args="$graphPath $srcDir $jarPath"

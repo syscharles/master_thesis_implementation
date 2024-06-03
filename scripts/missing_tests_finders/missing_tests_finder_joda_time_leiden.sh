@@ -1,0 +1,7 @@
+mainClass="com.kuleuven.missing_test_finder.MissingTestFinder"
+clustersPath="thesis_code/data/joda_time/clusters/leiden/clusters.json"
+testInput="systems/joda-time/src/test"
+jarPath="target/libs/joda-time-2.12.6.jar"
+srcDir="systems/joda-time/src"
+missingTests="thesis_code/data/joda_time/missing_tests/leiden/missing_tests.json"
+mvn exec:java -Dexec.mainClass=$mainClass -Dexec.args="$clustersPath $testInput $jarPath $srcDir $missingTests"

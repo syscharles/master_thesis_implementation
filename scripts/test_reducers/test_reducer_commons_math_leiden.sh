@@ -1,0 +1,7 @@
+mainClass="com.kuleuven.test_reducer.TestReducer"
+clustersPath="thesis_code/data/commons_math/clusters/leiden/clusters.json"
+testInput="systems/commons-math/src/test"
+testOutput="systems/commons-math/src/reduced_test_leiden"
+jarPath="target/libs/commons-math3-3.6.1.jar"
+srcDir="systems/commons-math/src"
+mvn exec:java -Dexec.mainClass=$mainClass -Dexec.args="$clustersPath $testInput $testOutput $jarPath $srcDir"
